@@ -12,6 +12,8 @@ spec:
     helm:
       valuesObject:
         fullnameOverride: guestbook-ui
+      valueFiles:
+        - custom-values.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: default
